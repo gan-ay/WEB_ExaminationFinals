@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinations — Explore Tropica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- NAVIGATION  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Explore Sagada</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="tours.html">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="container py-5">
+    <h1>Destinations</h1>
+    <p class="lead">Explore our curated list of coastal towns, mountain escapes, and cultural hotspots.</p>
+
+    <!-- Search + Filter -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <input id="searchInput" class="form-control" placeholder="Search destinations...">
+      </div>
+      <div class="col-md-6 text-md-end">
+        <select id="regionFilter" class="form-select w-auto d-inline-block">
+          <option value="all">All regions</option>
+          <option value="coast">Coastal</option>
+          <option value="mountain">Mountain</option>
+          <option value="culture">Culture</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="destinationCards" class="row g-4">
+      <!-- JS will render dynamic cards -->
+    </div>
+  </main>
+
+  <!-- FOOTER  -->
+  <footer class="bg-light py-4 mt-5 text-center small">
+    &copy; <span id="year-dest"></span> Explore Tropica
+  </footer>
+
+  <!-- TOP BUTTON  -->
+  <button id="topBtnDest" class="topBtn small" title="Go to top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
