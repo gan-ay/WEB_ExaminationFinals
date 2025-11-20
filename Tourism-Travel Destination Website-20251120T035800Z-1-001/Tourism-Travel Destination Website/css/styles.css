@@ -1,0 +1,30 @@
+/* Basic resets & typography */
+:root{
+  --brand: #0d6efd;
+  --muted: #6c757d;
+}
+body{font-family: system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;}
+.navbar-brand{font-weight:700}
+h1,h2,h3{color:#0b3a66}
+
+/* cards */
+.card{border:0}
+
+/* scroll-to-top button */
+#topBtn, .topBtn{position:fixed;right:16px;bottom:18px;display:none;border:none;padding:10px 12px;border-radius:8px;background:var(--brand);color:#fff;cursor:pointer;z-index:1000}
+
+/* small responsive tweaks */
+@media(max-width:576px){
+  .carousel-caption{display:none}
+}
+
+/* gallery tiles */
+.gallery-tile{cursor:pointer;overflow:hidden;border-radius:8px}
+.gallery-tile img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gallery-tile:hover img{transform:scale(1.05)}
+
+/* destination card badge */
+.dest-badge{position:absolute;left:12px;top:12px;background:rgba(0,0,0,0.6);color:#fff;padding:6px 10px;border-radius:999px;font-size:.8rem}
+
+/* small shadow */
+.shadow-sm{box-shadow:0 6px 18px rgba(18,38,63,0.06)}
